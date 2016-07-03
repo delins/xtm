@@ -1,0 +1,29 @@
+{
+    "pre_filters": [
+        {
+            "class": "ExitFilter",
+            "parameters": {
+                "inverse": true
+            }
+        },
+        {
+            "class": "MaxDepthFilter",
+            "parameters": {
+                "max_depth": 3
+            }
+        }
+    ],
+    "in_filters": [],
+
+    "post_filters": [
+        {
+            "class": "FunctionNameFilter",
+            "parameters": {
+                "function_names": [
+                    "current_user_can"
+                ],
+                "inverse": true
+            }
+        }
+    ]
+}
